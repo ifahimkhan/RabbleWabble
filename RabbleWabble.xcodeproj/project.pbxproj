@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		248BBC532BD0663400A0D01D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248BBC522BD0663400A0D01D /* AppDelegate.swift */; };
 		248BBC552BD0663400A0D01D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248BBC542BD0663400A0D01D /* SceneDelegate.swift */; };
-		248BBC572BD0663400A0D01D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248BBC562BD0663400A0D01D /* ViewController.swift */; };
+		248BBC572BD0663400A0D01D /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248BBC562BD0663400A0D01D /* QuestionViewController.swift */; };
 		248BBC5A2BD0663400A0D01D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248BBC582BD0663400A0D01D /* Main.storyboard */; };
-		248BBC5C2BD0663A00A0D01D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 248BBC5B2BD0663A00A0D01D /* Assets.xcassets */; };
-		248BBC5F2BD0663A00A0D01D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248BBC5D2BD0663A00A0D01D /* LaunchScreen.storyboard */; };
+		248BBC6C2BD0690200A0D01D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248BBC6B2BD0690200A0D01D /* Question.swift */; };
+		248BBC6E2BD0695100A0D01D /* QuestionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248BBC6D2BD0695100A0D01D /* QuestionGroup.swift */; };
+		248BBC702BD069F800A0D01D /* QuestionGroupData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248BBC6F2BD069F800A0D01D /* QuestionGroupData.swift */; };
+		248BBC722BD2342E00A0D01D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 248BBC712BD2342E00A0D01D /* Assets.xcassets */; };
+		248BBC742BD234AA00A0D01D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 248BBC732BD234AA00A0D01D /* LaunchScreen.storyboard */; };
+		248BBC762BD2359B00A0D01D /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248BBC752BD2359B00A0D01D /* QuestionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		248BBC4F2BD0663400A0D01D /* RabbleWabble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RabbleWabble.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		248BBC522BD0663400A0D01D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		248BBC542BD0663400A0D01D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		248BBC562BD0663400A0D01D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		248BBC562BD0663400A0D01D /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		248BBC592BD0663400A0D01D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		248BBC5B2BD0663A00A0D01D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		248BBC5E2BD0663A00A0D01D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		248BBC602BD0663A00A0D01D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		248BBC6B2BD0690200A0D01D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		248BBC6D2BD0695100A0D01D /* QuestionGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroup.swift; sourceTree = "<group>"; };
+		248BBC6F2BD069F800A0D01D /* QuestionGroupData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupData.swift; sourceTree = "<group>"; };
+		248BBC712BD2342E00A0D01D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../../Downloads/des-materials-editions-3.0/03-model-view-controller-pattern/projects/final/RabbleWabble/RabbleWabble/Resources/Assets.xcassets"; sourceTree = "<group>"; };
+		248BBC732BD234AA00A0D01D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "../../../../../../Downloads/des-materials-editions-3.0/03-model-view-controller-pattern/projects/final/RabbleWabble/RabbleWabble/Views/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		248BBC752BD2359B00A0D01D /* QuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QuestionView.swift; path = "../../../../../../Downloads/des-materials-editions-3.0/03-model-view-controller-pattern/projects/final/RabbleWabble/RabbleWabble/Views/QuestionView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		248BBC512BD0663400A0D01D /* RabbleWabble */ = {
 			isa = PBXGroup;
 			children = (
-				248BBC522BD0663400A0D01D /* AppDelegate.swift */,
-				248BBC542BD0663400A0D01D /* SceneDelegate.swift */,
-				248BBC562BD0663400A0D01D /* ViewController.swift */,
-				248BBC582BD0663400A0D01D /* Main.storyboard */,
-				248BBC5B2BD0663A00A0D01D /* Assets.xcassets */,
-				248BBC5D2BD0663A00A0D01D /* LaunchScreen.storyboard */,
-				248BBC602BD0663A00A0D01D /* Info.plist */,
+				248BBC662BD0676100A0D01D /* AppDelegate */,
+				248BBC672BD0678200A0D01D /* Controllers */,
+				248BBC682BD0679600A0D01D /* Models */,
+				248BBC692BD067A000A0D01D /* Resources */,
+				248BBC6A2BD067A800A0D01D /* Views */,
 			);
 			path = RabbleWabble;
+			sourceTree = "<group>";
+		};
+		248BBC662BD0676100A0D01D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				248BBC522BD0663400A0D01D /* AppDelegate.swift */,
+				248BBC542BD0663400A0D01D /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		248BBC672BD0678200A0D01D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				248BBC562BD0663400A0D01D /* QuestionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		248BBC682BD0679600A0D01D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				248BBC6B2BD0690200A0D01D /* Question.swift */,
+				248BBC6D2BD0695100A0D01D /* QuestionGroup.swift */,
+				248BBC6F2BD069F800A0D01D /* QuestionGroupData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		248BBC692BD067A000A0D01D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				248BBC712BD2342E00A0D01D /* Assets.xcassets */,
+				248BBC602BD0663A00A0D01D /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		248BBC6A2BD067A800A0D01D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				248BBC752BD2359B00A0D01D /* QuestionView.swift */,
+				248BBC732BD234AA00A0D01D /* LaunchScreen.storyboard */,
+				248BBC582BD0663400A0D01D /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +177,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				248BBC5F2BD0663A00A0D01D /* LaunchScreen.storyboard in Resources */,
-				248BBC5C2BD0663A00A0D01D /* Assets.xcassets in Resources */,
+				248BBC742BD234AA00A0D01D /* LaunchScreen.storyboard in Resources */,
+				248BBC722BD2342E00A0D01D /* Assets.xcassets in Resources */,
 				248BBC5A2BD0663400A0D01D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				248BBC572BD0663400A0D01D /* ViewController.swift in Sources */,
+				248BBC572BD0663400A0D01D /* QuestionViewController.swift in Sources */,
+				248BBC6C2BD0690200A0D01D /* Question.swift in Sources */,
 				248BBC532BD0663400A0D01D /* AppDelegate.swift in Sources */,
+				248BBC762BD2359B00A0D01D /* QuestionView.swift in Sources */,
+				248BBC702BD069F800A0D01D /* QuestionGroupData.swift in Sources */,
+				248BBC6E2BD0695100A0D01D /* QuestionGroup.swift in Sources */,
 				248BBC552BD0663400A0D01D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,14 +209,6 @@
 				248BBC592BD0663400A0D01D /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		248BBC5D2BD0663A00A0D01D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				248BBC5E2BD0663A00A0D01D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -289,7 +337,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KG4CK3G28T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RabbleWabble/Info.plist;
+				INFOPLIST_FILE = RabbleWabble/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KG4CK3G28T;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RabbleWabble/Info.plist;
+				INFOPLIST_FILE = RabbleWabble/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
