@@ -27,10 +27,29 @@ extension SelectQuestionGroupViewController : UITableViewDataSource{
 
     public func tableView(_ tableView:UITableView,cellForRowAt indexPath: IndexPath)->UITableViewCell{
 
-        let cell  = tableView.dequeueReusableCell(withIdentifier: "QuestionGroupCell") as! QuestionGroupCell
+        let cell  = tableView.dequeueReusableCell(withIdentifier: "QuestionGroupCell",for: indexPath) as! QuestionGroupCell
         let questiongroup = questionGroups[indexPath.row]
         cell.titleLabel.text = questiongroup.title
         return cell
 
+    }
+}
+
+extension SelectQuestionGroupViewController: UITableViewDelegate{
+
+    public func tableView(_ tableView:UITableView, willSelectRowAt indexPath: IndexPath)
+    -> IndexPath?
+    {
+        selectedQuestionGroup = questionGroups[indexPath.row]
+        return indexPath
+    }
+
+    public func tableView(_ tableView: UITableView,
+                          didSelectRowAt indexPath: IndexPath){
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    public override func prepare(for seque: UIStoryboardSegue,sender: Any?){
+        guard let viewController = seque.destination as? QuestionViewController else{ return }
+        viewController.questionGroup = selectedQuestionGroup
     }
 }

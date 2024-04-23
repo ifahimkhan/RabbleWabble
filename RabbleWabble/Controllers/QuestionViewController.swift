@@ -10,10 +10,24 @@ import UIKit
 class QuestionViewController: UIViewController {
 
 
-    public var questionGroup = QuestionGroup.basicPhrases()
     public var questionIndex = 0
     public var correctCount = 0
     public var incorrectCount = 0
+    public var questionGroup: QuestionGroup!{
+        didSet{
+            navigationItem.title = questionGroup.title
+        }
+    }
+    private lazy var questionIndexItem: UIBarButtonItem = {
+      let item = UIBarButtonItem(title: "",
+                                 style: .plain,
+                                 target: nil,
+                                 action: nil)
+      item.tintColor = .black
+      navigationItem.rightBarButtonItem = item
+      return item
+    }()
+
     public var questionView: QuestionView! {
         guard isViewLoaded else { return nil }
         return (view as! QuestionView)
@@ -21,6 +35,8 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         showQuestion()
+        questionIndexItem.title = "\(questionIndex + 1)/" +
+       "\(questionGroup.questions.count)"
         // Do any additional setup after loading the view.
     }
     private func showQuestion(){
