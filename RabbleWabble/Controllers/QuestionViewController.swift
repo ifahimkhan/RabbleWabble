@@ -35,8 +35,7 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         showQuestion()
-        questionIndexItem.title = "\(questionIndex + 1)/" +
-       "\(questionGroup.questions.count)"
+
         // Do any additional setup after loading the view.
     }
     private func showQuestion(){
@@ -47,6 +46,9 @@ class QuestionViewController: UIViewController {
 
         questionView.hintLabel.isHidden = true
         questionView.answerLabel.isHidden = true
+
+        questionIndexItem.title = "\(questionIndex + 1)/" +
+       "\(questionGroup.questions.count)"
     }
 
     @IBAction func toggleAnswerLabels(_ sender:Any){
