@@ -24,6 +24,9 @@
 		24CE9B9E2BD988DE00B097FB /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE9B9D2BD988DE00B097FB /* AppSettings.swift */; };
 		24CE9BA02BD98FA600B097FB /* AppSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE9B9F2BD98FA600B097FB /* AppSettingsViewController.swift */; };
 		24CE9BA52BDAC20300B097FB /* DiskCareTaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE9BA42BDAC20300B097FB /* DiskCareTaker.swift */; };
+		24CE9BA72BDAD46D00B097FB /* QuestionGroupCaretaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE9BA62BDAD46D00B097FB /* QuestionGroupCaretaker.swift */; };
+		24CE9BA92BDAE44500B097FB /* BaseQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE9BA82BDAE44500B097FB /* BaseQuestionStrategy.swift */; };
+		24CE9BAB2BDAEEDD00B097FB /* QuestionGroupData.json in Resources */ = {isa = PBXBuildFile; fileRef = 24CE9BAA2BDAEEDD00B097FB /* QuestionGroupData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		24CE9B9D2BD988DE00B097FB /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		24CE9B9F2BD98FA600B097FB /* AppSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewController.swift; sourceTree = "<group>"; };
 		24CE9BA42BDAC20300B097FB /* DiskCareTaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskCareTaker.swift; sourceTree = "<group>"; };
+		24CE9BA62BDAD46D00B097FB /* QuestionGroupCaretaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupCaretaker.swift; sourceTree = "<group>"; };
+		24CE9BA82BDAE44500B097FB /* BaseQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseQuestionStrategy.swift; sourceTree = "<group>"; };
+		24CE9BAA2BDAEEDD00B097FB /* QuestionGroupData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuestionGroupData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,7 @@
 			children = (
 				248BBC712BD2342E00A0D01D /* Assets.xcassets */,
 				248BBC602BD0663A00A0D01D /* Info.plist */,
+				24CE9BAA2BDAEEDD00B097FB /* QuestionGroupData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -144,6 +151,7 @@
 				24CE9B972BD7FFCB00B097FB /* QuestionStrategy.swift */,
 				24CE9B992BD800E800B097FB /* SequentialQuestionStrategy.swift */,
 				24CE9B9B2BD82ABA00B097FB /* RandomQuestionStrategy.swift */,
+				24CE9BA82BDAE44500B097FB /* BaseQuestionStrategy.swift */,
 			);
 			path = Strategies;
 			sourceTree = "<group>";
@@ -152,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				24CE9BA42BDAC20300B097FB /* DiskCareTaker.swift */,
+				24CE9BA62BDAD46D00B097FB /* QuestionGroupCaretaker.swift */,
 			);
 			path = CareTakers;
 			sourceTree = "<group>";
@@ -215,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				248BBC742BD234AA00A0D01D /* LaunchScreen.storyboard in Resources */,
+				24CE9BAB2BDAEEDD00B097FB /* QuestionGroupData.json in Resources */,
 				248BBC722BD2342E00A0D01D /* Assets.xcassets in Resources */,
 				248BBC5A2BD0663400A0D01D /* Main.storyboard in Resources */,
 			);
@@ -236,7 +246,9 @@
 				24CE9B942BD6ECBF00B097FB /* QuestionGroupCell.swift in Sources */,
 				24CE9B9A2BD800E800B097FB /* SequentialQuestionStrategy.swift in Sources */,
 				24CE9B9C2BD82ABA00B097FB /* RandomQuestionStrategy.swift in Sources */,
+				24CE9BA72BDAD46D00B097FB /* QuestionGroupCaretaker.swift in Sources */,
 				24CE9B982BD7FFCB00B097FB /* QuestionStrategy.swift in Sources */,
+				24CE9BA92BDAE44500B097FB /* BaseQuestionStrategy.swift in Sources */,
 				248BBC6E2BD0695100A0D01D /* QuestionGroup.swift in Sources */,
 				24CE9BA02BD98FA600B097FB /* AppSettingsViewController.swift in Sources */,
 				24CE9B922BD3959D00B097FB /* SelectQuestionGroupViewController.swift in Sources */,

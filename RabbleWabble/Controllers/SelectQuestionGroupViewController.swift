@@ -14,9 +14,30 @@ public class SelectQuestionGroupViewController: UIViewController{
             tableView.tableFooterView = UIView()
         }
     }
-    public let questionGroups = QuestionGroup.allGroups()
-    private var selectedQuestionGroup: QuestionGroup!
+    public let questionGroupCareTaker = QuestionGroupCaretaker()
+
+    private var questionGroups:[QuestionGroup]{
+        return questionGroupCareTaker.questionGroups
+    }
+    private var selectedQuestionGroup: QuestionGroup!{
+        get{
+            return questionGroupCareTaker.selectedQuestionGroup
+        }set{
+            questionGroupCareTaker.selectedQuestionGroup = newValue
+        }
+    }
     private let appSettings = AppSettings.shared
+
+    public override func viewDidLoad() {
+      super.viewDidLoad()
+      questionGroups.forEach {
+        print("\($0.title): " +
+          "correctCount \($0.score.correctCount), " +
+          "incorrectCount \($0.score.incorrectCount)"
+        )
+      }
+    }
+
 
 
 }
@@ -53,7 +74,7 @@ extension SelectQuestionGroupViewController: UITableViewDelegate{
         guard let viewController = seque.destination as? QuestionViewController else{ return }
         viewController.questionStrategy =
         appSettings.questionStrategy(
-           for: selectedQuestionGroup)
+            for: questionGroupCareTaker)
         viewController.delegate = self
     }
 }
@@ -68,7 +89,7 @@ extension SelectQuestionGroupViewController:
     public func questionViewController(
         _ viewController: QuestionViewController,
         didComplete questionStrategy: QuestionStrategy) {
-        navigationController?.popToViewController(self,
-                                                  animated: true)
-    }
+            navigationController?.popToViewController(self,
+                                                      animated: true)
+        }
 }
