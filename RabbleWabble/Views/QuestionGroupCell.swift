@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import Combine
 
 public class QuestionGroupCell: UITableViewCell{
     @IBOutlet public weak var titleLabel: UILabel!
     @IBOutlet public weak var percentageLabel: UILabel!
+    public var percentageSubscriber: AnyCancellable?
 }
