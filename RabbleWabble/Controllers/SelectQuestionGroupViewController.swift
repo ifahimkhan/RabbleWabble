@@ -14,7 +14,7 @@ public class SelectQuestionGroupViewController: UIViewController{
             tableView.tableFooterView = UIView()
         }
     }
-    public let questionGroupCareTaker = QuestionGroupCaretaker()
+    private let questionGroupCareTaker = QuestionGroupCaretaker()
 
     private var questionGroups:[QuestionGroup]{
         return questionGroupCareTaker.questionGroups
@@ -76,14 +76,25 @@ extension SelectQuestionGroupViewController: UITableViewDelegate{
                           didSelectRowAt indexPath: IndexPath){
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    public override func prepare(for seque: UIStoryboardSegue,sender: Any?){
-        guard let viewController = seque.destination as? QuestionViewController else{ return }
+    public override func prepare(
+      for segue: UIStoryboardSegue, sender: Any?) {
+      if let viewController =
+        segue.destination as? QuestionViewController {
         viewController.questionStrategy =
-        appSettings.questionStrategy(
-            for: questionGroupCareTaker)
+          appSettings.questionStrategy(for: questionGroupCareTaker)
         viewController.delegate = self
+
+      } else if let navController =
+          segue.destination as? UINavigationController,
+        let viewController =
+          navController.topViewController as? CreateQuestionGroupViewController {
+        viewController.delegate = self
+      }
+
+      // Whatevs... skip anything else
     }
-}
+  }
+
 extension SelectQuestionGroupViewController:
     QuestionViewControllerDelegate {
     public func questionViewController(_ questionViewController: QuestionViewController,
@@ -99,3 +110,19 @@ extension SelectQuestionGroupViewController:
                                                       animated: true)
         }
 }
+
+extension SelectQuestionGroupViewController:
+CreateQuestionGroupViewControllerDelegate {
+  public func createQuestionGroupViewControllerDidCancel(
+    _ viewController: CreateQuestionGroupViewController) {
+    dismiss(animated: true, completion: nil)
+  }
+  public func createQuestionGroupViewController(
+    _ viewController: CreateQuestionGroupViewController,
+    created questionGroup: QuestionGroup) {
+        questionGroupCareTaker.questionGroups.append(questionGroup)
+        try? questionGroupCareTaker.save()
+            dismiss(animated: true, completion: nil)
+            tableView.reloadData()
+          }
+        }

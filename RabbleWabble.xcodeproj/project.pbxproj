@@ -32,6 +32,7 @@
 		24CE9BB12BDC2F9400B097FB /* CreateQuestionGroupTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE9BB02BDC2F9400B097FB /* CreateQuestionGroupTitleCell.swift */; };
 		24CE9BB32BDC2FC900B097FB /* JapaneseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE9BB22BDC2FC900B097FB /* JapaneseTextField.swift */; };
 		24CE9BB72BDC30A500B097FB /* NewQuestionGroup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24CE9BB62BDC30A500B097FB /* NewQuestionGroup.storyboard */; };
+		24CE9BBA2BDD0FD600B097FB /* QuestionGroupBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24CE9BB92BDD0FD600B097FB /* QuestionGroupBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		24CE9BB02BDC2F9400B097FB /* CreateQuestionGroupTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuestionGroupTitleCell.swift; sourceTree = "<group>"; };
 		24CE9BB22BDC2FC900B097FB /* JapaneseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseTextField.swift; sourceTree = "<group>"; };
 		24CE9BB62BDC30A500B097FB /* NewQuestionGroup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewQuestionGroup.storyboard; sourceTree = "<group>"; };
+		24CE9BB92BDD0FD600B097FB /* QuestionGroupBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionGroupBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,9 @@
 		248BBC512BD0663400A0D01D /* RabbleWabble */ = {
 			isa = PBXGroup;
 			children = (
-				24CE9BA32BDAC1D800B097FB /* CareTakers */,
 				248BBC662BD0676100A0D01D /* AppDelegate */,
+				24CE9BB82BDD0FA700B097FB /* Builders */,
+				24CE9BA32BDAC1D800B097FB /* CareTakers */,
 				248BBC672BD0678200A0D01D /* Controllers */,
 				248BBC682BD0679600A0D01D /* Models */,
 				248BBC692BD067A000A0D01D /* Resources */,
@@ -180,6 +183,14 @@
 			path = CareTakers;
 			sourceTree = "<group>";
 		};
+		24CE9BB82BDD0FA700B097FB /* Builders */ = {
+			isa = PBXGroup;
+			children = (
+				24CE9BB92BDD0FD600B097FB /* QuestionGroupBuilder.swift */,
+			);
+			path = Builders;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -260,6 +271,7 @@
 				248BBC532BD0663400A0D01D /* AppDelegate.swift in Sources */,
 				248BBC762BD2359B00A0D01D /* QuestionView.swift in Sources */,
 				24CE9B942BD6ECBF00B097FB /* QuestionGroupCell.swift in Sources */,
+				24CE9BBA2BDD0FD600B097FB /* QuestionGroupBuilder.swift in Sources */,
 				24CE9BAF2BDC2F2C00B097FB /* CreateQuestionCell.swift in Sources */,
 				24CE9B9A2BD800E800B097FB /* SequentialQuestionStrategy.swift in Sources */,
 				24CE9B9C2BD82ABA00B097FB /* RandomQuestionStrategy.swift in Sources */,
